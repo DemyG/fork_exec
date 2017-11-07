@@ -50,8 +50,8 @@ int main() {
 										if (WIFEXITED(status)){
 												printf("child with pid %d exited with status of %d\n", pid_table[i], WEXITSTATUS(status));
 												if (status_table[i] == 0){
-													stopped_processes++;
-												 	status_table[i] = 1;
+														stopped_processes++;
+														status_table[i] = 1;
 												}
 												// restart an instace
 												deploy_an_instance(pid_table, i);
