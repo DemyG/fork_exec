@@ -9,18 +9,34 @@
 #define NUM 2
 
 
-int deploy_an_instance(pid_t *ptr_pid, int offset){
+int deploy_low_prio_instance(pid_t *ptr_pid, int offset){
     pid_t pid;
     if ((pid = fork()) < 0)
         perror("fork() error");
     else if (pid == 0) {
         //sleep(10*(offset+1));
-        //sprintf(index, "%d", offset);
-        char *index = "1";
-        sprintf(index, "%d", offset);
-        printf("index %s\n", index);
-        char *const paramList[] = {"./child_program", index, NULL};
-        //execv("./child_program", paramList);
+        char *const paramList[] = {"./low_prio_program", "10", NULL};
+        execv("./low_prio_program", paramList);
+        exit(1);
+    }
+    else{
+        ptr_pid[offset] = pid;
+        printf("child%d pid %d\n",offset, pid);
+    }
+
+    return pid;
+
+}
+
+
+int deploy_high_prio_instance(pid_t *ptr_pid, int offset){
+    pid_t pid;
+    if ((pid = fork()) < 0)
+        perror("fork() error");
+    else if (pid == 0) {
+        //sleep(10*(offset+1));
+        char *const paramList[] = {"./low_prio_program", "20", NULL};
+        execv("./low_prio_program", paramList);
         //exit(1);
     }
     else{
@@ -39,7 +55,11 @@ int main() {
 
     for (i=0; i<NUM; i++){
         // deploy an instace
-        pid = deploy_an_instance(pid_table, i);
+        if (i != 0)
+            pid = deploy_low_prio_instance(pid_table, i);
+        else
+            pid = deploy_high_prio_instance(pid_table, i);
+
         status_table[i] = 0;
     }
 
@@ -47,6 +67,7 @@ int main() {
         do {
             for(i =0; i<NUM; i++){
                 if ((pid = waitpid(pid_table[i], &status, WNOHANG)) == -1){
+                    sleep(1);
                     perror("wait() error");
                 }
                 else if (pid == 0) {
@@ -62,7 +83,10 @@ int main() {
                             status_table[i] = 1;
                         }
                         // restart an instace
-                        deploy_an_instance(pid_table, i);
+                        if (i != 0)
+                            pid = deploy_low_prio_instance(pid_table, i);
+                        else
+                            pid = deploy_high_prio_instance(pid_table, i);
                         printf("child with pid %d forked\n", pid_table[i]);
                     }
                     else printf("child with pid %d did not exit successfully", pid_table[i]);
