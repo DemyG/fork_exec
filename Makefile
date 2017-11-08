@@ -1,9 +1,11 @@
-CC = gcc
-CFLAGS = -Wall -g
+CC=gcc
+CFLAGS=-I -Wall -g
+OBJ = test_forking.c 
+EXECUTABLE = test_forking
+all: test_forking
 
-test_forking: test_forking.o
-	$(CC) $(CFLAGS) -o test_forking test_forking.o 
-test_forking.o: test_forking.c
-	$(CC) $(CFLAGS) -c test_forking.c 
+$(EXECUTABLE): $(OBJ)
+	    gcc -o $@ $^ $(CFLAGS)
 
-
+clean:
+	    rm -f $(EXECUTABLE)
