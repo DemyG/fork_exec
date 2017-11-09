@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-#define N 22020096
+#define N 150000
 
 int main(int argc, char* argv[]){
     int i, j;
