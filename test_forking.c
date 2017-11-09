@@ -86,8 +86,8 @@ int main() {
         info_table[i] =  malloc(sizeof(struct process_info));
         if (i == 0){
             info_table[i]->executable = executable_name_1;
-            *ptr = (char) i; 
-            info_table[i]->core = ptr;
+            //*ptr = (char) i; 
+            info_table[i]->core = "0"; //ptr;
         }
         else{
             switch(i){
