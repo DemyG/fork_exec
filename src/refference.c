@@ -15,9 +15,6 @@ int deploy_an_instance(pid_t *ptr_pid, int offset){
         perror("fork() error");
     else if (pid == 0) {
         sleep(10*(offset+1));
-        /*char *index = &offset;
-        char *const paramList[] = {"./child_program", index, NULL};
-        execv("./child_program", paramList);*/
         exit(1);
     }
     else{
