@@ -7,10 +7,11 @@
 #include <stdlib.h>
 #include<signal.h>
 
-#define NUM 3
+#define NUM 1
 
 static pid_t pid_table[NUM];
 static int STOP = 0;
+static char *current_core;
 static void CtrlC_sighandler(int signo){
 		int i;
 		STOP = 1;
@@ -28,9 +29,16 @@ int deploy_low_prio_instance(pid_t *ptr_pid, int offset){
 		if ((pid = fork()) < 0)
 				perror("fork() error");
 		else if (pid == 0) {
+                //char *buf = "2";
+                //char buf;
+                printf("pid_table[NUM], %d\n", pid_table[0]);
 				//sleep(10*(offset+1));
-				char *const paramList[] = {"./low_prio_program", "10", NULL};
-				execv("./low_prio_program", paramList);
+                printf("current core: %s\n", current_core);
+				//snprintf(buf, sizeof(int), "%d", current_core);
+                //buf = (char)current_core;
+                //printf("%d\n", buf);
+                char *const paramList[] = {"/usr/bin/taskset", "-c", current_core, "./low_prio_program", NULL};
+				execv("/usr/bin/taskset", paramList);
 				//exit(1);
 		}
 		else{
@@ -49,8 +57,8 @@ int deploy_high_prio_instance(pid_t *ptr_pid, int offset, char* executable_name)
 				perror("fork() error");
 		else if (pid == 0) {
 				//sleep(10*(offset+1));
-				char *const paramList[] = {executable_name, "100", NULL};
-				execv("./low_prio_program", paramList);
+				char *const paramList[] = {executable_name, NULL};
+				execv("./high_prio_program", paramList);
 				//exit(1);
 		}
 		else{
@@ -70,10 +78,13 @@ int main() {
 		if(signal(SIGINT, CtrlC_sighandler) == SIG_ERR)
 				printf("\ncan't catch SIGINT\n");
 
-		char *executable_name = "./low_prio_program";
+        char core[3] = {"0", "1", "2"};
+		char *executable_name = "./high_prio_program";
 		for (i=0; i<NUM; i++){
 				// deploy an instace
-				if (i != 0)
+                printf("core:%s\n", core[i]);
+                current_core = core[i];
+				if (i != 1)
 						pid = deploy_low_prio_instance(pid_table, i);
 				else
 						pid = deploy_high_prio_instance(pid_table, i, executable_name);

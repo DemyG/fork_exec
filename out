@@ -1,192 +1,32 @@
-sleeping for 10 seconds
-sleeping for 10 seconds
-sleeping for 10 seconds
-sleeping for 10 seconds
-sleeping for 10 seconds
-sleeping for 10 seconds
-sleeping for 10 seconds
-sleeping for 10 seconds
-sleeping for 10 seconds
-sleeping for 10 seconds
-child0 pid 23286
-child1 pid 23287
-child2 pid 23288
-child with pid 23286 is still running at Wed Nov  8 20:26:35 2017
-child with pid 23287 is still running at Wed Nov  8 20:26:36 2017
-child with pid 23288 is still running at Wed Nov  8 20:26:37 2017
-child with pid 23286 is still running at Wed Nov  8 20:26:38 2017
-child with pid 23287 is still running at Wed Nov  8 20:26:39 2017
-child with pid 23288 is still running at Wed Nov  8 20:26:40 2017
-child with pid 23286 is still running at Wed Nov  8 20:26:41 2017
-child with pid 23287 is still running at Wed Nov  8 20:26:42 2017
-child with pid 23288 is still running at Wed Nov  8 20:26:43 2017
-child with pid 23286 is still running at Wed Nov  8 20:26:44 2017
-child with pid 23287 exited with status of 1
-child1 pid 23291
-child with pid 23291 forked
-child with pid 23288 exited with status of 1
-child2 pid 23292
-child with pid 23292 forked
-child with pid 23286 is still running at Wed Nov  8 20:26:45 2017
-child with pid 23291 is still running at Wed Nov  8 20:26:46 2017
-child with pid 23292 is still running at Wed Nov  8 20:26:47 2017
-child with pid 23286 is still running at Wed Nov  8 20:26:48 2017
-child with pid 23291 is still running at Wed Nov  8 20:26:49 2017
-child with pid 23292 is still running at Wed Nov  8 20:26:50 2017
-child with pid 23286 is still running at Wed Nov  8 20:26:51 2017
-child with pid 23291 is still running at Wed Nov  8 20:26:52 2017
-child with pid 23292 is still running at Wed Nov  8 20:26:53 2017
-child with pid 23286 is still running at Wed Nov  8 20:26:54 2017
-child with pid 23291 exited with status of 1
-child1 pid 23296
-child with pid 23296 forked
-child with pid 23292 exited with status of 1
-child2 pid 23297
-child with pid 23297 forked
-child with pid 23286 is still running at Wed Nov  8 20:26:55 2017
-child with pid 23296 is still running at Wed Nov  8 20:26:56 2017
-child with pid 23297 is still running at Wed Nov  8 20:26:57 2017
-child with pid 23286 is still running at Wed Nov  8 20:26:58 2017
-child with pid 23296 is still running at Wed Nov  8 20:26:59 2017
-child with pid 23297 is still running at Wed Nov  8 20:27:00 2017
-child with pid 23286 is still running at Wed Nov  8 20:27:01 2017
-child with pid 23296 is still running at Wed Nov  8 20:27:02 2017
-child with pid 23297 is still running at Wed Nov  8 20:27:03 2017
-child with pid 23286 is still running at Wed Nov  8 20:27:04 2017
-child with pid 23296 exited with status of 1
-child1 pid 23304
-child with pid 23304 forked
-child with pid 23297 exited with status of 1
-child2 pid 23305
-child with pid 23305 forked
-child with pid 23286 is still running at Wed Nov  8 20:27:05 2017
-child with pid 23304 is still running at Wed Nov  8 20:27:06 2017
-child with pid 23305 is still running at Wed Nov  8 20:27:07 2017
-child with pid 23286 is still running at Wed Nov  8 20:27:08 2017
-child with pid 23304 is still running at Wed Nov  8 20:27:09 2017
-child with pid 23305 is still running at Wed Nov  8 20:27:10 2017
-child with pid 23286 is still running at Wed Nov  8 20:27:11 2017
-child with pid 23304 is still running at Wed Nov  8 20:27:12 2017
-child with pid 23305 is still running at Wed Nov  8 20:27:13 2017
-child with pid 23286 is still running at Wed Nov  8 20:27:14 2017
-child with pid 23304 exited with status of 1
-child1 pid 23308
-child with pid 23308 forked
-child with pid 23305 exited with status of 1
-child2 pid 23309
-child with pid 23309 forked
-child with pid 23286 is still running at Wed Nov  8 20:27:15 2017
-child with pid 23308 is still running at Wed Nov  8 20:27:16 2017
-child with pid 23309 is still running at Wed Nov  8 20:27:17 2017
-child with pid 23286 is still running at Wed Nov  8 20:27:18 2017
-child with pid 23308 is still running at Wed Nov  8 20:27:19 2017
-child with pid 23309 is still running at Wed Nov  8 20:27:20 2017
-child with pid 23286 is still running at Wed Nov  8 20:27:21 2017
-child with pid 23308 is still running at Wed Nov  8 20:27:22 2017
-child with pid 23309 is still running at Wed Nov  8 20:27:23 2017
-child with pid 23286 is still running at Wed Nov  8 20:27:24 2017
-child with pid 23308 exitsleeping for 10 seconds
-sleeping for 10 seconds
-sleeping for 10 seconds
-sleeping for 10 seconds
-sleeping for 10 seconds
-sleeping for 10 seconds
-sleeping for 10 seconds
-sleeping for 10 seconds
-ed with status of 1
-child1 pid 23330
-child with pid 23330 forked
-child with pid 23309 exited with status of 1
-child2 pid 23331
-child with pid 23331 forked
-child with pid 23286 is still running at Wed Nov  8 20:27:25 2017
-child with pid 23330 is still running at Wed Nov  8 20:27:26 2017
-child with pid 23331 is still running at Wed Nov  8 20:27:27 2017
-child with pid 23286 is still running at Wed Nov  8 20:27:28 2017
-child with pid 23330 is still running at Wed Nov  8 20:27:29 2017
-child with pid 23331 is still running at Wed Nov  8 20:27:30 2017
-child with pid 23286 is still running at Wed Nov  8 20:27:31 2017
-child with pid 23330 is still running at Wed Nov  8 20:27:32 2017
-child with pid 23331 is still running at Wed Nov  8 20:27:33 2017
-child with pid 23286 is still running at Wed Nov  8 20:27:34 2017
-child with pid 23330 exited with status of 1
-child1 pid 23335
-child with pid 23335 forked
-child with pid 23331 exited with status of 1
-child2 pid 23336
-child with pid 23336 forked
-child with pid 23286 is still running at Wed Nov  8 20:27:35 2017
-child with pid 23335 is still running at Wed Nov  8 20:27:36 2017
-child with pid 23336 is still running at Wed Nov  8 20:27:37 2017
-child with pid 23286 is still running at Wed Nov  8 20:27:38 2017
-child with pid 23335 is still running at Wed Nov  8 20:27:39 2017
-child with pid 23336 is still running at Wed Nov  8 20:27:40 2017
-child with pid 23286 is still running at Wed Nov  8 20:27:41 2017
-child with pid 23335 is still running at Wed Nov  8 20:27:42 2017
-child with pid 23336 is still running at Wed Nov  8 20:27:43 2017
-child with pid 23286 is still running at Wed Nov  8 20:27:44 2017
-child with pid 23335 exited with status of 1
-child1 pid 23339
-child with pid 23339 forked
-child with pid 23336 exited with status of 1
-child2 pid 23340
-child with pid 23340 forked
-child with pid 23286 is still running at Wed Nov  8 20:27:45 2017
-child with pid 23339 is still running at Wed Nov  8 20:27:46 2017
-child with pid 23340 is still running at Wed Nov  8 20:27:47 2017
-child with pid 23286 is still running at Wed Nov  8 20:27:48 2017
-child with pid 23339 is still running at Wed Nov  8 20:27:49 2017
-child with pid 23340 is still running at Wed Nov  8 20:27:50 2017
-child with pid 23286 is still running at Wed Nov  8 20:27:51 2017
-child with pid 23339 is still running at Wed Nov  8 20:27:52 2017
-child with pid 23340 is still running at Wed Nov  8 20:27:53 2017
-child with pid 23286 is still running at Wed Nov  8 20:27:54 2017
-child with pid 23339 exited with status of 1
-child1 pid 23345
-child with pid 23345 forked
-child with pid 23340 exited with status of 1
-child2 pid 23346
-child with pid 23346 forked
-child with pid 23286 is still running at Wed Nov  8 20:27:55 2017
-child with pid 23345 is still running at Wed Nov  8 20:27:56 2017
-child with pid 23346 is still running at Wed Nov  8 20:27:57 2017
-child with pid 23286 is still running at Wed Nov  8 20:27:58 2017
-child with pid 23345 is still running at Wed Nov  8 20:27:59 2017
-child with pid 23346 is still running at Wed Nov  8 20:28:00 2017
-child with pid 23286 is still running at Wed Nov  8 20:28:01 2017
-child with pid 23345 is still running at Wed Nov  8 20:28:02 2017
-child with pid 23346 is still running at Wed Nov  8 20:28:03 2017
-child with pid 23286 is still running at Wed Nov  8 20:28:04 2017
-child with pid 23345 exited with status of 1
-child1 pid 23348
-child with pid 23348 forked
-child with pid 23346 exited with status of 1
-child2 pid 23349
-child with pid 23349 forked
-child with pid 23286 is still running at Wed Nov  8 20:28:05 2017
-child with pid 23348 is still running at Wed Nov  8 20:28:06 2017
-child with pid 23349 is still running at Wed Nov  8 20:28:07 2017
-child with pid 23286 is still running at Wed Nov  8 20:28:08 2017
-child with pid 23348 is still running at Wed Nov  8 20:28:09 2017
-child with pid 23349 is still running at Wed Nov  8 20:28:10 2017
-child with pid 23286 is still running at Wed Nov  8 20:28:11 2017
-child with pid 23348 is still running at Wed Nov  8 20:28:12 2017
-child with pid 23349 is still running at Wed Nov  8 2sleeping for 100 seconds
-sleeping for 10 seconds
-sleeping for 10 seconds
-0:28:13 2017
-child with pid 23286 is still running at Wed Nov  8 20:28:14 2017
-child with pid 23348 exited with status of 1
-child1 pid 23350
-child with pid 23350 forked
-child with pid 23349 exited with status of 1
-child2 pid 23351
-child with pid 23351 forked
-child with pid 23286 exited with status of 1
-child0 pid 23352
-child with pid 23352 forked
-child with pid 23350 is still running at Wed Nov  8 20:28:15 2017
-child with pid 23351 is still running at Wed Nov  8 20:28:16 2017
-father killed child0 with pid: 23352
-father killed child1 with pid: 23350
-father killed child2 with pid: 23351
+child0 pid 12791
+pid_table[NUM], 12791
+=>child0 exited with status of 0
+=>child1 exited with status of 0
+child0 pid 12791
+child1 pid 12792
+child with pid 12791 is still running at Thu Nov  9 09:53:32 2017
+child with pid 12792 exited with status of 0
+pid_table[NUM], 12791
+child with pid 12792 forked
+signal handler killed child0 with pid 12791
+signal handler killed child1 with pid 12792
+Everything is dead because of a signal
+child0 pid 12791
+child1 pid 12792
+child with pid 12791 is still running at Thu Nov  9 09:53:32 2017
+child with pid 12792 exited with status of 0
+child1 pid 12793
+child with pid 12793 forked
+child with pid 12791 is still running at Thu Nov  9 09:53:33 2017
+child with pid 12793 is still running at Thu Nov  9 09:53:34 2017
+child with pid 12791 is still running at Thu Nov  9 09:53:35 2017
+child with pid 12793 is still running at Thu Nov  9 09:53:36 2017
+child with pid 12791 is still running at Thu Nov  9 09:53:37 2017
+child with pid 12793 is still running at Thu Nov  9 09:53:38 2017
+child with pid 12791 is still running at Thu Nov  9 09:53:39 2017
+child with pid 12793 is still running at Thu Nov  9 09:53:40 2017
+child with pid 12791 is still running at Thu Nov  9 09:53:41 2017
+child with pid 12793 is still running at Thu Nov  9 09:53:42 2017
+signal handler killed child0 with pid 12791
+signal handler killed child1 with pid 12793
+Everything is dead because of a signal
