@@ -73,19 +73,21 @@ int deploy_high_prio_instance(pid_t *ptr_pid, int offset, char* core, char* exec
 int main() {
     pid_t pid;
     time_t t;
-    int status, i, stopped_processes = 0, status_table[NUM];
+    int status, stopped_processes = 0, status_table[NUM];
+    unsigned int i;
 
     if(signal(SIGINT, CtrlC_sighandler) == SIG_ERR)
         printf("\ncan't catch SIGINT\n");
 
-
+    char *ptr;
     char *executable_name_1 = "./high_prio_program";
     char *executable_name_2 = "./low_prio_program";
     for (i=0; i<NUM; i++){
         info_table[i] =  malloc(sizeof(struct process_info));
         if (i == 0){
             info_table[i]->executable = executable_name_1;
-            info_table[i]->core = "0";
+            *ptr = (char) i; 
+            info_table[i]->core = ptr;
         }
         else{
             switch(i){
