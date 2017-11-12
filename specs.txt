@@ -1,0 +1,3 @@
+./high_prio_program
+./low_prio_program
+./dedup_prio_program
