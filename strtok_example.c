@@ -29,54 +29,31 @@ int main () {
 				paramList[1] = "-c";
 				paramList[2] = "0";
 				/* get the first token */
-				char *str;
-				memcpy(str, line, strlen(line));
-				token = strtok(str, s);
+				token = strtok(line, s);
 				int i = 3;
-				char *list;
 				/* walk through other tokens */
 				while( token != NULL ) {
-						//printf( "%s\n", token);
-						paramList[i] = token;
+						paramList[i] = strdup(token);
 						token = strtok(NULL, s);
-						list = paramList[i];
 						i++;
 				}
-				list[strlen(list) - 1] = '\0';
-				paramList[i-1] = list;
+				paramList[i-1][strlen(paramList[i-1]) - 1] = '\0';
 				paramList[i] = NULL;
 				i = 0;
 				while(paramList[i] != NULL){
 						printf( "%s ", paramList[i]);
-						//printf( "%lu\n", strlen(paramList[i]));
 						i++;
 				}
 				printf( "\n");
 		}
-		printf("New output\n");
-		i =0;
-		while(paramList[i] != NULL){
-				printf( "%s ", paramList[i]);
-				//printf( "%lu\n", strlen(paramList[i]));
-				i++;
-		}
-				printf( "\n");
-
-		//free(line);
-		printf("New output\n");
-		i =0;
-		while(paramList[i] != NULL){
-				printf( "%s ", paramList[i]);
-				//printf( "%lu\n", strlen(paramList[i]));
-				i++;
-		}
-				printf( "\n");
+		free(line);
 		fclose(f);
 		printf("New output\n");
-		i =0;
+		i = 0;
 		while(paramList[i] != NULL){
 				printf( "%s ", paramList[i]);
-				//printf( "%lu\n", strlen(paramList[i]));
+                if (i>=3)
+                    free(paramList[i]);
 				i++;
 		}
 				printf( "\n");
