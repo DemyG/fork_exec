@@ -1,6 +1,6 @@
 CC=gcc
-CFLAGS=-I -Wall -g
-OBJ = test_forking.c 
+CFLAGS=-Wall -g
+OBJ =monitor.c 
 EXECUTABLE = test_forking
 all: test_forking
 
